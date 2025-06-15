@@ -1,0 +1,65 @@
+
+#emailHelp{
+    font-size: 12px;
+}
+
+.tit h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.title h1{
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    padding: 30px 0;
+}
+/*div contenedor de todos los datos, atencion ,telefono*/
+.datos-contacto{
+    font-size: 15px;
+    text-align: center;
+}
+/*estilos iconos*/
+.iconos{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/*estilos div info horario,telefono*/
+.info{
+    margin: 35px 10px;
+}
+/*estilos div ubicacion y direccion*/
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos div formulario*/
+.formulario{
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Mensajes de error */
+.mensajeError{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#enviar{
+    background-color: #DF01A7;
+}
+
+#link-terminos{
+    background-color: white; color: rgb(82, 82, 82); border: none; text-decoration: underline; font-size: 20px;
+}

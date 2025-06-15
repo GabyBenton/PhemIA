@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
+  <!-- Icon -->
+  <link rel="icon" href="./src/img/phem.png" type="image/png">
+  <!--Link CSS Navbar-->
+  <link rel="stylesheet" href="./src/css/navfooter.css">
+  <!--Link CSS Index-->
+  <link rel="stylesheet" href="./src/css/index.css">
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--Link iconos-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!--Link font google-->
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    .principal {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .categorias {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+    }
+
+    /*contenedorDeLasCategorias */
+    .imagen-categorias {
+      width: 25%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    /*categorias  */
+    .imagen-categorias:hover {
+      scale: 92%;
+      transition: all 1ms;
+    }
+
+    .imagen-categorias a {
+      width: 100%;
+      height: 100%;
+    }
+
+    .imagen-categorias h6 {
+      position: relative;
+      top: 10%;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      background-color: #df01a85f;
+      border-radius: 20px;
+      border: 1px white solid;
+      width: 50%;
+      margin: 0 auto;
+      padding: 2.5px;
+      backdrop-filter: blur(10px);
+    }
+
+    .imagen-categorias img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+    }
+
+    .beneficios {
+      margin-top: 20px;
+      margin-bottom: 0;
+      background-color: #DF01A7;
+      color: white;
+      padding: 0.5%;
+    }
+
+    .beneficios ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      list-style-type: none;
+      padding: 0;
+      justify-content: space-evenly;
+    }
+
+    .beneficios ul li {
+      width: 30%;
+      margin-top: 10px;
+      text-align: center;
+      padding: 0;
+    }
+
+    .beneficios ul li i {
+      font-size: 2em;
+    }
+
+    .cliente {
+      display: flex;
+      background-image: url("https://www.helpguide.org/wp-content/uploads/2023/02/Benefits-of-Pets.jpeg");
+      height: 70vh;
+      background-size: 100%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .cliente p {
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 20px;
+      width: 40%;
+      backdrop-filter: blur(10px);
+      color: white;
+      font-size: 1.5em;
+      font-style: oblique;
+      font-weight: 500;
+      text-align: center;
+      margin-right: 5%;
+      padding: 20px;
+      box-shadow: 0 0 7px 1px white;
+      text-align: justify;
+    }
+
+    .lo-mas-vendido {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h4 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    .card {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .cliente {
+        height: 40vh;
+      }
+
+      .cliente p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .cliente {
+        height: 30vh;
+      }
+
+      .cliente p {
+        font-size: 0.7em;
+      }
+
+      .imagen-categorias {
+        height: 30vh;
+      }
+
+      .imagen-categorias h6 {
+        font-size: 50%;
+      }
+
+      h4 {
+        font-size: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+
+  </header>
+  <!--Main-->
+  <main>
+    <section class="inicioimg">
+      <img id="botones" src="./src/img/botones.png" alt="">
+    </section>
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="h1-text">Protegiendo con inteligencia, liderando con fuerza.</h1>
+        <p>Soluciones modernas de ciberseguridad para proteger lo que más importa</p>
+        <a href="./nosotros.html">
+          <button class="boton">Conoce más...</button>
+        </a>
+        
+      </div>
+      <div class="hero-img">
+        <img src="./src/img/hero1.png" alt="Ciberseguridad">
+      </div>
+    </section>
+
+    <div class="row g-2 productos ">
+      <div class="col-sm">
+        <h1 id="servicios" class="h1-text">Nuestros servicios.</h1>
+        <div class="categorias container-fluid">
+          <div class="imagen-categorias">
+            <h6>Phishblocks Kids</h6>
+            <a href="./productos.html#phish"><img src="./src/img/phishkids.png" alt=""></a>
+          </div>
+          <div class="imagen-categorias">
+            <h6>MailSentinel</h6>
+            <a href="./productos.html#mailSen"><img src="./src/img/mailSentinel.png" alt=""></a>
+          </div>
+          <div class="imagen-categorias">
+            <h6>Phemi</h6>
+            <a href="./productos.html#phemi"><img src="./src/img/phemi.png" alt=""></a>
+          </div>
+          <div class="imagen-categorias">
+            <h6>More...</h6>
+            <a href="./productos.html#aves"><img src="./src/img/esc.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="beneficios container-fluid">
+      <ul>
+        <li>
+          <i class="bi bi-shield-lock"></i>
+          <h6>Protección Inmediata</h6>
+          <p>Defensa proactiva contra amenazas cibernéticas</p>
+        </li>
+        <li>
+          <i class="bi bi-people"></i>
+          <h6>Expertos a tu Servicio</h6>
+          <p>Asesoramiento y soporte de profesionales certificados.</p>
+        </li>
+        <li>
+          <i class="bi bi-pc-display"></i>
+          <h6>Navegación Protegida</h6>
+          <p>Mantén tus clics seguros, evitando enlaces maliciosos.</p>
+        </li>
+      </ul>
+    </div>
+    <br>
+
+  </main>
+  <!--Footer-->
+  <footer class="py-5">
+
+  </footer>
+  <!--Scripts-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('a6EtC--2fowK_8GRa')
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./src/js/navbar.js"></script>
+</body>
+
+</html>
